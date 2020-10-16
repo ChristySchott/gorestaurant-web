@@ -110,8 +110,9 @@ const Dashboard: React.FC = () => {
             <Food
               key={food.id}
               food={food}
+              toggleModal={toggleEditModal}
               handleDelete={handleDeleteFood}
-              handleEditFood={handleEditingFood}
+              handleEditingFood={handleEditingFood}
             />
           ))}
       </FoodsContainer>
