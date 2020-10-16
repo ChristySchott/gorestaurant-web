@@ -85,8 +85,8 @@ const Dashboard: React.FC = () => {
     setEditModalOpen(!editModalOpen);
   }
 
-  function handleEditFood(food: IFoodPlate): void {
-    // TODO SET THE CURRENT EDITING FOOD ID IN THE STATE
+  function handleEditingFood(food: IFoodPlate): void {
+    setEditingFood(food);
   }
 
   return (
@@ -111,7 +111,7 @@ const Dashboard: React.FC = () => {
               key={food.id}
               food={food}
               handleDelete={handleDeleteFood}
-              handleEditFood={handleEditFood}
+              handleEditFood={handleEditingFood}
             />
           ))}
       </FoodsContainer>
